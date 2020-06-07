@@ -1,0 +1,54 @@
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+@mixin font($font: 'avenirragular', $size: false, $colour: false, $weight: false,  $lh: false) {
+    font-family: $font;
+    @if $size { font-size: $size; }
+    @if $colour { color: $colour; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
+
+@mixin background_image($height: false, $width: false, $bg_size: false, $bg_pos: false, $bg_repeate: false, $radius: false){
+@if $height {height: $height;}
+@if $width {width: $width;}
+@if $bg_size {background-size: $bg_size;}
+@if $bg_pos {background-position: $bg_pos;}
+@if $bg_repeate {background-repeat: $bg_repeate;}
+@if $radius { border-radius: $radius;}
+}
+
+
+
+@mixin  flex($flex: $flex, $direction:false, $align: false, $justify: false) {
+    display: $flex;
+    @if $direction{flex-direction: $direction;}
+   @if $align{align-items: $align;}
+   @if $justify {justify-content: $justify;} 
+}
+
+@mixin  image($width: false, $height: false, $fit: false, $pos:false, $radius: false) {
+    @if $width {width: $width}
+    @if $height {height: $height;}
+    @if $fit {object-fit: $fit;}
+    @if $pos {object-position: $pos;}
+    @if $radius {border-radius: $radius;}
+}
+
+@mixin ellipsis($width: $width, $height: $height){
+   width: $width;
+   height: $height;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+
+@mixin  ellipsismulti ($line: $line){
+    display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}

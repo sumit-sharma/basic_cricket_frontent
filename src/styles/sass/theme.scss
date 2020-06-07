@@ -1,0 +1,280 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$defi-primary: (
+    50 : #fff0e9,
+    100 : #ffd8c8,
+    200 : #ffbfa3,
+    300 : #ffa57e,
+    400 : #ff9162,
+    500 : #ff7e46,
+    600 : #ff763f,
+    700 : #ff6b37,
+    800 : #ff612f,
+    900 : #ff4e20,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffd8cf,
+    A700 : #ffc3b6,
+    contrast: (
+        50 : #ffffff,
+        100 : #ffffff,
+        200 : #ffffff,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #000000,
+        A100 : #ffffff,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$defi-blue: (
+    50 : #e8f3fe,
+    100 : #c5e1fd,
+    200 : #9ecdfc,
+    300 : #77b8fa,
+    400 : #5aa9f9,
+    500 : #3d9af8,
+    600 : #3792f7,
+    700 : #2f88f6,
+    800 : #277ef5,
+    900 : #1a6cf3,
+    A100 : #ffffff,
+    A200 : #f2f7ff,
+    A400 : #bfd5ff,
+    A700 : #a6c5ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$defi-vibrant-blue: (
+    50 : #e3ebf5,
+    100 : #b8cde6,
+    200 : #89acd5,
+    300 : #598ac4,
+    400 : #3671b8,
+    500 : #1258ab,
+    600 : #1050a4,
+    700 : #0d479a,
+    800 : #0a3d91,
+    900 : #052d80,
+    A100 : #aec3ff,
+    A200 : #7b9dff,
+    A400 : #4877ff,
+    A700 : #2f64ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$defi-bright-green: (
+    50 : #eafcf5,
+    100 : #caf7e7,
+    200 : #a6f2d7,
+    300 : #82edc7,
+    400 : #68e9bb,
+    500 : #4de5af,
+    600 : #46e2a8,
+    700 : #3dde9f,
+    800 : #34da96,
+    900 : #25d386,
+    A100 : #ffffff,
+    A200 : #dbffee,
+    A400 : #a8ffd7,
+    A700 : #8fffcb,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+
+
+
+
+
+$candy-app-primary: mat-palette($defi-primary);
+$defi-blue: mat-palette($defi-blue);
+$candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+$candy-app-theme:   mat-light-theme($candy-app-primary, $candy-app-accent);
+
+// Include the default theme styles.
+@include angular-material-theme($candy-app-theme);
+
+
+// Define an alternate dark theme.
+$dark-primary: mat-palette($mat-blue-grey);
+$dark-accent:  mat-palette($mat-amber, A200, A100, A400);
+$dark-warn:    mat-palette($mat-deep-orange);
+$dark-theme:   mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+
+// Include the alternative theme styles inside of a block with a CSS class. You can make this
+// CSS class whatever you want. In this example, any component inside of an element with
+// `.unicorn-dark-theme` will be affected by this alternate dark theme instead of the default theme.
+.unicorn-dark-theme {
+  @include angular-material-theme($dark-theme);
+}
+
+$custom-typography: mat-typography-config(
+  $font-family: 'avenirragular',
+  $headline: mat-typography-level(32px, 48px, 700),
+  $body-1: mat-typography-level(16px, 24px, 500),
+  $body-2: mat-typography-level(18px, 24px, 500)
+);
+
+@include angular-material-typography($custom-typography);
+
+.mat-slide-toggle-bar {
+    position: relative;
+    width: 50px !important;
+    height: 24px !important;
+    border-radius: 12px !important;
+    // background-color: #e5e5e5 !important;
+}
+.mat-slide-toggle.mat-checked.mat-defi-blue .mat-slide-toggle-bar {
+    background-color: #3D9AF8 !important;
+}
+.mat-slide-toggle.mat-defi-blue .mat-slide-toggle-bar {
+    background-color: #e5e5e5 !important ;
+}
+.mat-slide-toggle.mat-checked.mat-defi-blue .mat-slide-toggle-thumb {
+    background-color: #ffffff ;
+}
+.mat-slide-toggle-content{
+    @include font('avenirragular', 14px, #999999, 500, 1.2)
+}
+.mat-slide-toggle{
+    position: relative;
+}
+
+.mat-slide-toggle-thumb-container {
+    width: 20px !important;
+    height: 20px !important;
+    top: 2px !important;
+    left: 2px !important;
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb-container {
+    transform: translate3d(25px, 0, 0) !important;
+}
+.mat-input-element {
+    caret-color: #999999 !important;
+    line-height: 1 !important;
+}
+
+.onboard{
+    padding: 5px 0 !important;
+    .onboard_inp{
+        caret-color: #999999 !important;
+        line-height: 1.4 !important;
+        min-height: 2.75em !important;
+        margin-top: 3px !important;
+        .mat-select-value{
+            caret-color: #999999 !important;
+            line-height: 2.8 !important;
+            min-height: 2.75em !important;
+            margin-top: 3px !important;
+        }
+    }
+    &.mat-form-field-appearance-outline{
+        .mat-select-arrow-wrapper {
+            transform: translateY(0%) !important;
+        }
+    }
+}
+
+// =============common textbox===============
+.inp-sm.mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 0.85em 0 0.52em 0 !important;
+}
+.inp-sm.mat-form-field-appearance-outline .mat-select-arrow-wrapper {
+    transform: translateY(-15%) !important;
+}
+.inp-sm .mat-form-field-infix{
+    border-top: 0 solid transparent !important;
+}
+.inp-sm.mat-form-field{
+    @include font('avenirmedium', 14px, #111111, 500, 1 !important)
+}
+// ===============common textbox
+.onboard.mat-form-field-appearance-outline .mat-form-field-infix{
+    padding: 5px 0 !important;
+}
+.onboard.mat-form-field-appearance-outline{
+    .mat-form-field-flex{
+        align-items: center !important;
+    }
+}
+.mat-menu-item{
+    font-family: 'avenirmedium' !important;
+    height: 38px !important;
+    line-height: 38px !important;
+}
+.cdk-overlay-container {
+    z-index: 1004 !important;
+}
+.mat-tab-header{
+    margin-bottom: 15px !important;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+    border-color: var(--blue) !important;
+}
+.mat-radio-button.mat-accent .mat-radio-inner-circle, 
+.mat-radio-button.mat-accent .mat-radio-ripple 
+.mat-ripple-element:not(.mat-radio-persistent-ripple), 
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, 
+.mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+    background-color: var(--blue) !important;
+}
+.mat-radio-button .mat-radio-ripple{
+    display: none !important;
+}
+.mat-radio-label-content{
+    @include font('avenirbold', 14px, #1f1f1f !important)
+}

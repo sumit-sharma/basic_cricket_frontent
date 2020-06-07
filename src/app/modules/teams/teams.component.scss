@@ -1,0 +1,35 @@
+@import 'src/styles/sass/minxin';
+.team-wrapper{
+    ul{
+        list-style: none;
+        @include flex(flex, row, flex-start);
+        flex-wrap: wrap;
+        li{
+            width: calc(100% / 3);
+            padding: 10PX;
+            .team-card{
+                border: 1px solid var(--border);
+                border-radius: 5px;
+                padding: 10px;
+                @include flex(flex, row, center, space-between);
+                .text{
+                    h3{
+                        font-size: 20px;
+                    }
+                    p{
+    
+                    }
+                }
+                figure{
+                    width: 100px;
+                    img{
+                        width: 100px;
+                        border-radius: 5px;
+                    }
+                }
+               
+            }
+           
+        }
+    }
+}

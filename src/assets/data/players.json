@@ -1,0 +1,38 @@
+{
+    "data": {
+        "id": 1,
+        "name": "Madge Thompson DVM",
+        "slug": "madge-thompson-dvm",
+        "logo_uri": "https://lorempixel.com/640/480/?90312",
+        "representation_entity": "Arkansas",
+        "status": "Active",
+        "players": [
+            {
+                "id": 1,
+                "first_name": "Tre",
+                "last_name": "Rowe",
+                "team_id": 1,
+                "nick_name": "Cheyanne",
+                "image_uri": "https://lorempixel.com/640/480/?20606",
+                "jersey_number": 51,
+                "country": "USA",
+                "status": "1",
+                "created_at": "2020-06-05T01:05:43.000000Z",
+                "updated_at": "2020-06-05T01:05:43.000000Z"
+            },
+            {
+                "id": 7,
+                "first_name": "Evan",
+                "last_name": "Moen",
+                "team_id": 1,
+                "nick_name": "Stephen",
+                "image_uri": "https://lorempixel.com/640/480/?69284",
+                "jersey_number": 47,
+                "country": "USA",
+                "status": "1",
+                "created_at": "2020-06-05T01:05:43.000000Z",
+                "updated_at": "2020-06-05T01:05:43.000000Z"
+            }
+        ]
+    }
+}

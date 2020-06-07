@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "team1_id": 1,
+            "team1": "Madge Thompson DVM",
+            "team2_id": 2,
+            "team2": "Shirley Bernier",
+            "schedule_at": "2020-06-09",
+            "winner": null,
+            "status": "Tbs",
+            "remark": null
+        },
+        {
+            "id": 2,
+            "team1_id": 1,
+            "team1": "Madge Thompson DVM",
+            "team2_id": 9,
+            "team2": "Miss Nakia Feil I",
+            "schedule_at": "2020-06-10",
+            "winner": null,
+            "status": "Tbs",
+            "remark": null
+        }
+    ],
+    "links": {
+        "first": "http://cricket.test/api/fixture?page=1",
+        "last": "http://cricket.test/api/fixture?page=1",
+        "prev": null,
+        "next": null
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "last_page": 1,
+        "path": "http://cricket.test/api/fixture",
+        "per_page": 10,
+        "to": 2,
+        "total": 2
+    }
+}

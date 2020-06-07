@@ -1,0 +1,39 @@
+<section>
+  <div class="team-wrapper">
+    <ul>
+      <li *ngFor="let team of teams">
+        <div class="team-card" (click)="onSelect(team)">
+          <div class="text">
+            <h3>{{team.name}}</h3>
+            <p>{{team.representation_entity}}</p>
+          </div>
+          
+          <figure>
+            <img src="{{team.logo_uri}}" alt="">
+          </figure>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+<hr>
+<h3>Result</h3>
+  <div class="result">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Team 1</th>
+          <th>Team 2</th>
+          <th>Winner</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let result of fixture">
+          <td>{{result.team1}}</td>
+          <td>{{result.team2}}</td>
+          <td>{{result.winner}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

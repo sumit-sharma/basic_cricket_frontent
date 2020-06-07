@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "team": "Amiya Effertz",
+            "team_id": 10,
+            "points": 10
+        },
+        {
+            "id": 2,
+            "team": "Coty Mante",
+            "team_id": 5,
+            "points": 8
+        },
+        {
+            "id": 3,
+            "team": "Dayana Schuster",
+            "team_id": 7,
+            "points": 4
+        },
+        {
+            "id": 4,
+            "team": "Devan Johnson",
+            "team_id": 8,
+            "points": 8
+        },
+        {
+            "id": 5,
+            "team": "Laron Boyer",
+            "team_id": 4,
+            "points": 8
+        },
+        {
+            "id": 6,
+            "team": "Madge Thompson DVM",
+            "team_id": 1,
+            "points": 4
+        },
+        {
+            "id": 7,
+            "team": "Miss Nakia Feil I",
+            "team_id": 9,
+            "points": 6
+        },
+        {
+            "id": 8,
+            "team": "Ned Koss",
+            "team_id": 6,
+            "points": 1
+        },
+        {
+            "id": 9,
+            "team": "Roslyn Aufderhar",
+            "team_id": 3,
+            "points": 2
+        },
+        {
+            "id": 10,
+            "team": "Shirley Bernier",
+            "team_id": 2,
+            "points": 9
+        }
+    ]
+}
